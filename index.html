@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3x3 Mindset Reset — Day 3</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #fdfbfb, #ebedee);
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      color: #333;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    textarea {
+      width: 100%;
+      height: 80px;
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      resize: vertical;
+      box-sizing: border-box;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .reset-btn {
+      background-color: #ff5e5e;
+      color: white;
+    }
+    .print-btn {
+      background-color: #66bb6a;
+      color: white;
+    }
+    @media print {
+      button {
+        display: none !important;
+      }
+      textarea {
+        border: none;
+        resize: none;
+        overflow: hidden;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+<h1>🌱 3x3 MINDSET RESET — DAY 3</h1>
+<h2>Theme: I Am Becoming Better Every Day</h2>
+
+<div class="section">
+  <h3>✅ 1. Track 3 Micro-Wins</h3>
+  <textarea placeholder="Win 1..."></textarea>
+  <textarea placeholder="Win 2..."></textarea>
+  <textarea placeholder="Win 3..."></textarea>
+</div>
+
+<div class="section">
+  <h3>🧠 2. Upgrade 3 Habits by 1%</h3>
+  <textarea placeholder="Habit 1..."></textarea>
+  <textarea placeholder="Habit 2..."></textarea>
+  <textarea placeholder="Habit 3..."></textarea>
+</div>
+
+<div class="section">
+  <h3>📈 3. Envision 3 Future Wins</h3>
+  <textarea placeholder="Future Win 1..."></textarea>
+  <textarea placeholder="Future Win 2..."></textarea>
+  <textarea placeholder="Future Win 3..."></textarea>
+</div>
+
+<div class="section">
+  <h3>💬 Bonus Affirmation</h3>
+  <textarea placeholder="“Growth is not loud. It’s quiet decisions repeated daily.”"></textarea>
+</div>
+
+<div style="text-align: center;">
+  <button class="print-btn" onclick="window.print()">🖨️ Save as PDF / Print</button>
+  <button class="reset-btn" onclick="resetForm()">🔄 Reset All</button>
+</div>
+
+<script>
+  function resetForm() {
+    const textareas = document.querySelectorAll('textarea');
+    textareas.forEach(area => area.value = '');
+  }
+</script>
+</body>
+</html>
